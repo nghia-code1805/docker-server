@@ -1,0 +1,9 @@
+net\mzouabi\ng2\server\repository\PersonRepositoryCustom.class
+net\mzouabi\ng2\server\model\Person.class
+net\mzouabi\ng2\server\dto\AbstractDTO.class
+net\mzouabi\ng2\server\mvc\PersonController.class
+net\mzouabi\ng2\server\mapper\PersonMapper.class
+net\mzouabi\ng2\server\ServerApplication.class
+net\mzouabi\ng2\server\dto\PersonDTO.class
+net\mzouabi\ng2\server\model\AbstractEntity.class
+net\mzouabi\ng2\server\service\PersonService.class

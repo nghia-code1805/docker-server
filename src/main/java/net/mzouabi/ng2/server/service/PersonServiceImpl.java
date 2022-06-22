@@ -10,18 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-
 
 @Service
-@Transactional
 public class PersonServiceImpl implements PersonService {
 
     final static Logger LOG = LoggerFactory.getLogger(PersonServiceImpl.class);
 
     @Autowired
-    PersonRepository personRepository;
+    private PersonRepository personRepository;
 
     @Autowired
     PersonMapper personMapper;
@@ -33,7 +29,7 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public PersonDTO getPerson(Long id) {
-        Person person = personRepository.getOne(id);
+        Person person = personRepository.getPerson(id);
         if (person == null) {
             return null;
         } else {

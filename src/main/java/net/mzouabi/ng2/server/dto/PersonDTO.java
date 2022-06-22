@@ -13,8 +13,6 @@ public class PersonDTO extends AbstractDTO {
 
     Integer age;
 
-    Date dateOfBirth;
-
     public String getFirstname() {
         return firstname;
     }
@@ -39,19 +37,12 @@ public class PersonDTO extends AbstractDTO {
         this.age = age;
     }
 
-    public Date getDateOfBirth() {
-        return dateOfBirth;
+    @Override
+    public String toString() {
+        return "PersonDTO{" +
+                "firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", age=" + age +
+                '}';
     }
-
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
-	@Override
-	public String toString() {
-		return "PersonDTO [firstname=" + firstname + ", lastname=" + lastname + ", age=" + age + ", dateOfBirth="
-				+ dateOfBirth + "]";
-	}
-    
-    
 }
